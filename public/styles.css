@@ -38,6 +38,7 @@ dt,h2 {
 .connections a{
   color: var(--first--page-links);
 }
+
 .coding {
   display: flex;
   flex-direction: column;
@@ -47,6 +48,7 @@ dt,h2 {
   padding: 1em;
   
 }
+
 .coding b{
   font-size: 1.2rem;
 }
@@ -148,6 +150,17 @@ form{
       "title controls"
       "nav nav";
     row-gap: 0.5rem;
+  }
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+  .connections,
+  .survey,
+  form {
+    grid-column: auto;
+    grid-area: auto;
+    max-width: 100%;
   }
 
   #main_title {
