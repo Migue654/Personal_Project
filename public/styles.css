@@ -142,7 +142,7 @@ form{
   max-width: 25rem;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:10px) {
   .top {
     display: grid;
     grid-template-columns: 1fr auto;
