@@ -1,0 +1,22 @@
+:root{
+    --page-color:#aa998f;
+    --textbox-color--:#FEEBD7;
+    --navbar-color--: #723d46 ;
+    --title-color--: beige;
+    --second-page-section--:#ADADAD;
+    --second-page-text--:#55251d;
+    --first-page-text--:#925c5c;
+    --first--page-links: red;
+}
+
+body.darkmode{
+    --page-color:#4e2915;
+    --textbox-color--:#9b6933;
+    --navbar-color--: #040646 ;
+    --title-color--: beige;
+    --second-page-section--:#891717;
+    --second-page-text--:#1eb6d8;
+    --first-page-text--:#d2f939;
+    --first--page-links: rgb(255, 255, 255);
+
+}

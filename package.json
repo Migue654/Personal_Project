@@ -1,0 +1,27 @@
+{
+  "name": "csc_437_http-server",
+  "version": "1.0.0",
+  "description": "CSC_437-https",
+  "homepage": "https://github.com/Migue654/CSC_437_HTTP-server#readme",
+  "bugs": {
+    "url": "https://github.com/Migue654/CSC_437_HTTP-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Migue654/CSC_437_HTTP-server.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "https-server": "^0.1.2"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

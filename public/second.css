@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Page base */
+body {
+  background-color: var(--page-color);
+}
+
+/* Typography */
+dt,
+h2 {
+  font-family: "Macondo", cursive;
+}
+
+#main_title {
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-size: 3em;
+}
+
+/* Top header bar */
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--navbar-color--);
+}
+
+.top a,
+.top h1 {
+  color: var(--title-color--);
+}
+.top label{
+  color: white;
+}
+
+/* Navigation */
+.navigation {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Main content container */
+#img_description {
+  background-color: var(--second-page-section--);
+  border-radius: 1em;
+  border: 0.1em solid black;
+  margin: 1em;
+  width: 75em;
+}
+
+/* Section title */
+#pic_title {
+  padding: 1em;
+}
+
+/* Images */
+#image {
+  padding: 1.5rem;
+  border-radius: 3rem;
+  width: 100%;
+  max-width: 22em;
+  height: auto;
+}
+
+/* Subpage text styling */
+.subpage p,
+.subpage ul,
+.subpage li {
+  margin: 1em;
+  color: var(--second-page-text--);
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Mobile styles */
+.top button {
+  display: none;
+}
+.top label {
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "title controls"
+      "nav nav";
+    row-gap: 0.5rem;
+  }
+
+  #main_title {
+    grid-area: title;
+    font-size: 2rem;
+  }
+
+  .header-controls {
+    grid-area: controls;
+    display: flex;
+    gap: 0.5rem;
+  }
+  .top label {
+    margin-top: 0.8rem;
+    color: aliceblue;
+  }
+  .top button {
+    display: block;
+    height: 2.5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+  }
+
+  .navigation {
+    display: none;
+   
+  }
+  .navigation.show{
+    display: flex;
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  };
+  #img_description {
+    width: auto;
+  }
+}
+
