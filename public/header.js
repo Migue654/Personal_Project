@@ -74,7 +74,7 @@ form.addEventListener('submit',(event)=>{
         if( error_check!= null){
             error_check.remove();
         }
-        // this adds the sentence
+        //  adds the sentence
         const error = document.createElement("p");
 
         error.id= "email-error";
@@ -106,16 +106,16 @@ form.addEventListener('submit',(event)=>{
         }
     }
     if (!onechecked) {
-        // 1️ Remove any old checkbox error
+        //  Remove any old checkbox error
         const oldCheckboxError = document.querySelector("#checkbox-error");
         if (oldCheckboxError) oldCheckboxError.remove();
     
-        // 2️ Create new error message
+        //  Create new error message
         const checkboxError = document.createElement("p");
         checkboxError.id = "checkbox-error";
         checkboxError.innerText = "Please select at least one option";
     
-        // 3️ Insert after the fieldset
+        //  Insert after the fieldset
         const fieldset = document.querySelector("fieldset");
         fieldset.after(checkboxError);
     
@@ -125,10 +125,10 @@ form.addEventListener('submit',(event)=>{
             box.setAttribute("aria-describedby", "checkbox-error");
         }
     
-        // 5️⃣ Focus the first checkbox
+        //  Focus the first checkbox
         survey_checkbox[0].focus();
     
-        // 6️⃣ Prevent form submission
+        // 6️ Prevent form submission
         event.preventDefault();
     } else {
         // Remove ARIA attributes if valid

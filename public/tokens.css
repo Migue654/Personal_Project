@@ -10,13 +10,13 @@
 }
 
 body.darkmode{
-    --page-color:#4e2915;
-    --textbox-color--:#9b6933;
-    --navbar-color--: #040646 ;
+    --page-color:#02245a;
+    --textbox-color--:#7e5840;
+    --navbar-color--: #000000 ;
     --title-color--: beige;
-    --second-page-section--:#891717;
-    --second-page-text--:#1eb6d8;
-    --first-page-text--:#d2f939;
-    --first--page-links: rgb(255, 255, 255);
+    --second-page-section--:#9a8e76;
+    --second-page-text--:#160532;
+    --first-page-text--:#f5f5fa;
+    --first--page-links: rgb(0, 195, 255);
 
 }
